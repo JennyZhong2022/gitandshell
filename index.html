@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Input Demo</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Input Demo</title>
-</head>
+  <body>
+    <h3>
+      Using CSS to Style HTML Form from
+      <main></main>
+    </h3>
+    <section>
+      <form action="#">
+        <!-- first name -->
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstName"
+          placeholder="Your first name..."
+        />
 
-<body>
-  <h3>Using CSS to Style HTML Form</h3>
-  <section>
-    <form action="#">
-      <!-- first name -->
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstName" placeholder="Your first name...">
+        <!-- last name -->
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastName"
+          placeholder="Your last name..."
+        />
 
+        <!-- country selection -->
+        <label for="country">Country</label>
+        <select name="country" id="cuntry">
+          <option value="australia - 1">Australia</option>
+          <option value="china - 2">China</option>
+          <option value="america - 3">America</option>
+          <option value="canada - 4">Canada</option>
+        </select>
 
-      <!-- last name -->
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastName" placeholder="Your last name...">
+        <!-- mutiply select -->
+        <label for="apple">Apple juice</label>
+        <input type="checkbox" id="apple" />
+        <label for="banana">Banana juice</label>
+        <input type="checkbox" id="banana" />
 
-      <!-- country selection -->
-      <label for="country">Country</label>
-      <select name="country" id="cuntry">
-        <option value="australia - 1">Australia</option>
-        <option value="china - 2">China</option>
-        <option value="america - 3">America</option>
-        <option value="canada - 4">Canada</option>
-      </select>
+        <!-- single select -->
 
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="femae" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
 
-      <!-- mutiply select -->
-      <label for="apple">Apple juice</label>
-      <input type="checkbox" id="apple">
-      <label for="banana">Banana juice</label>
-      <input type="checkbox" id="banana">
+        <br />
 
-      <!-- single select -->
+        <!-- password -->
 
-      <label for="female">Female</label>
-      <input type="radio" name="gender" id="femae">
-      <label for="male">Male</label>
-      <input type="radio" name="gender" id="male">
-
-      <br>
-
-      <!-- password -->
-
-      <label for="password">Password</label>
-      <input type="passowrd" name="Mypassword" id="password" placeholder="Your password...">
-      <input type="submit" value="Submit">
-
-    </form>
-
-  </section>
-</body>
-
+        <label for="password">Password</label>
+        <input
+          type="passowrd"
+          name="Mypassword"
+          id="password"
+          placeholder="Your password..."
+        />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
 </html>
